@@ -1,0 +1,32 @@
+[project]
+name = "pander-presupposition"
+version = "1.0.0"
+description = "Does a false premise move a model's expressed belief more when presupposed than asserted?"
+readme = "README.md"
+authors = [{ name = "Daria Bikina", email = "daria.bikina@gmail.com" }]
+requires-python = ">=3.13"
+license = "MIT"
+dependencies = [
+    # judges, consensus rule and logit transform come from the benchmark, pinned to one commit
+    "pander-score @ git+https://github.com/sophronresearch/pander-score.git@18e4684dd80efd2f3a6baccce5ff3be407c3e2c8",
+    "huggingface-hub",
+    "inspect-ai==0.3.248",
+    "json-repair",
+    "numpy",
+    "polars",
+    "scipy",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.0.2"]
+
+[build-system]
+requires = ["uv_build>=0.8.9,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "presup"
+
+[tool.uv]
+# newer cryptography has no wheel for Intel Macs
+constraint-dependencies = ["cryptography<46; sys_platform == 'darwin' and platform_machine == 'x86_64'"]

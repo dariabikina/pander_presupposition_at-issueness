@@ -1,0 +1,6 @@
+The stimuli (stimuli/) and the run outputs (results/) are released under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+The propositions the stimuli are built on, and the baseline credences used to pick them, come
+from the Pander Score v1 benchmark (https://github.com/sophronresearch/pander-score), which is
+also released under CC BY 4.0.

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these stimuli or this code, please cite it as below."
+title: "Presupposition, at-issueness and sycophancy: a pilot"
+authors:
+  - family-names: Bikina
+    given-names: Daria
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/dariabikina/pander_presupposition_at-issueness"
+references:
+  - type: article
+    title: "The Pander Score: A Continuous Measure of Sycophancy as Epistemic Deference"
+    authors:
+      - family-names: Botas
+        given-names: Alejandro
+      - family-names: de Font-Reaulx
+        given-names: Paul
+      - family-names: Hewitt
+        given-names: Luke
+    year: 2026
+    repository-code: "https://github.com/sophronresearch/pander-score"
